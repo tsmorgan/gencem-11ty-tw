@@ -1,9 +1,9 @@
 {
-  "siteTitle": "My Eleventy Site with Tailwind CSS",
-  "url": "https://example.com",
-  "description": "This is a default template for Eleventy with TailwindCSS",
-  "keywords": "eleventy, 11ty, tailwind, tailwindcss, css, ssg",
-  "image": "https://www.11ty.dev/img/built/IdthKOzqFA-350.avif",
-  "twitter": "@jeremy_daly",
+  "siteTitle": "The Gentle Cemetery",
+  "url": "https://gentlecemetery.com",
+  "description": "...for the victims of comedy.",
+  "keywords": "comedy",
+  "image": "/images/promoimage.png",
+  "twitter": "@tsmz",
   "card": "summary"
 }

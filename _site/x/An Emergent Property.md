@@ -1,0 +1,1 @@
+Talk about complexity and how an emergent thing can't necessarily be explained by looking back at the apparent "causes".

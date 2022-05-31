@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-  <head>    
+  <head>
     <link rel="canonical" href="{{ config.url }}{{ page.url }}">
     <link rel="stylesheet" href="/css/styles.css" />
 
-    <title>{% if title and title != 'Home' %}{{title}} - {% endif %}{{ config.siteTitle }}</title>
+    <title>{% if page.title and page.title != 'Home' %}{{title}} - {% endif %}{{ config.siteTitle }}</title>
 
     <!-- Icons -->
     <link rel="shortcut icon" type="image/png" href="/images/x16-favicon.png" sizes="16x16" />
@@ -22,32 +22,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Facebook -->
-    <meta property="og:title" content="{% if (title != 'Home') %}{{title}} - {% endif %}{{ config.siteTitle }}">
+    <meta property="og:title" content="{% if (title != 'Home') %}{{ page.fileSlug | titleCase }} - {% endif %}{{ config.siteTitle }}">
     <meta property="og:type" content="website">
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}">
     <meta property="og:url" content="{{ config.url }}{{ page.url }}">
-    <meta property="og:image" content="{% if image %}{{ image }}{% else %}{{ config.image }}{% endif %}">
+    <meta property="og:image" content="{{ config.url }}{% if image %}{{ image }}{% else %}{{ config.image }}{% endif %}">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="{{ card }}">
-    <meta name="twitter:site" content="{{ twitter }}">
-    <meta name="twitter:title" content="{% if (title != 'Home') %}{{title}} - {% endif %}{{ config.siteTitle }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ config.twitter }}">
+    <meta name="twitter:title" content="{% if (title != 'Home') %}{{ page.fileSlug | titleCase }} - {% endif %}{{ config.siteTitle }}">
     <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}">
-    <meta name="twitter:creator" content="{{ twitter }}">
-    <meta name="twitter:image" content="{{ config.url }}{{ page.url }}">
-    <meta name="twitter:domain" content="{% if image %}{{ image }}{% else %}{{ config.image }}{% endif %}">
+    <meta name="twitter:creator" content="{{ config.twitter }}">
+    <meta name="twitter:image" content="{{ config.url }}{% if image %}{{ image }}{% else %}{{ config.image }}{% endif %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
 
   </head>
-  <body>
-    <header>
-    </header> 
-    <div>
-			{{ content | safe }}
-    </div>
-		
-    <footer class="mt-0 text-center text-base text-gray-500">
-      <p>&copy; {{ '' | year }} - <a href="{{ config.url }}">{{ config.siteTitle }}</a> | <a href="/sitemap.xml" class="text-indigo-500">Site Map</a></p>
-			<p class="pt-1 text-sm">Made with ❤️ by <a href="https://twitter.com/jeremy_daly" target="_blank" class="text-pink-500">Jeremy Daly</a></p>
-    </footer>
+  <body class='bg-stone-100 text-md sm:text-lg nojs px-2 sm:px-6'>
+    <main class="mx-auto max-w-prose main">
+
+      {{ content | safe }}
+
+    </main>
+  <script type="text/javascript">
+    document.body.classList.add('js');
+    document.body.classList.remove('nojs');
+  </script>
   </body>
 </html>

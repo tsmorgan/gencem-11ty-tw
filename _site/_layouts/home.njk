@@ -2,4 +2,40 @@
 layout: base
 ---
 
-{{ content | safe }}
+<h1 class="flex-auto pt-12 special text-6xl font-black mb-0 site_title">
+  {{ config.siteTitle }}
+  <img class="ml-3 inline" src="/images/promoimage.png" width="100" height="100" alt="the tattood arm of Lenny Bruce"/>
+</h1>
+
+<p class="mb-12 ml-2 text-stone-500 text-base">{{ config.description }}</p>
+
+<article class="bg-white p-3 sm:py-5 sm:px-6 md:py-10 md:px-12">
+
+  {{ content | safe }}
+
+</article>
+
+<aside class="py-10 px-12" id="latest">
+
+  <h2 class="text-stone-500 mb-3 text-2xl special">A list of pages that have most recently been updated:</h2>
+
+  <ul>
+  {% for page in collections.pages | sort(true,true,"date") | limit(20) %}
+  <li class="mb-1"><a href="{{ page.url }}" data-date="{{ page.date }}">{{ page.fileSlug }} &mdash; <span class="date">{{ page.date | datawoohoo }}</span></a></li>
+  {% endfor %}
+  </ul>
+
+</aside>
+
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/plugin/relativeTime.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.1/cash.min.js"></script>
+<script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+<script type="text/javascript">
+	$('#latest a').each(function(i,el)
+	{
+		var d = $(el).data('date');
+		var e = dayjs(d);
+		$(el).find(".date").text(e.fromNow());
+	});
+</script>

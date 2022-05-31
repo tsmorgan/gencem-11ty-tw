@@ -1,0 +1,12 @@
+---
+title: Home
+layout: page
+---
+
+<p>A list of all the bits of comedy I've written about</p>
+
+<ul>
+{% for page in collections.bits | sort(true,true,"fileSlug") %}
+<li class="mb-1"><a href="{{ page.url }}" data-date="{{ page.date }}">{{ page.fileSlug }}</a> &mdash; <span class="text-stone-600">{{ page.data.by }}</span></li>
+{% endfor %}
+</ul>

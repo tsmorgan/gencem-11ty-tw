@@ -1,0 +1,6 @@
+# Other interesting articles
+In [this article](https://theconversation.com/the-evolutionary-origins-of-laughter-are-rooted-more-in-survival-than-enjoyment-57750) on The Conversation website, they emphasise the social aspect of laughter.  They talk about how people respond to it, how it's more common in groups and stuff like that. They talk about evolution, and heavy breathing during bouts of tickling which I think is wrong. It's interesting that they don't mention anything to do with the physiological effects of laughter. 
+
+This [article in Scientific American](https://www.scientificamerican.com/article/why-do-we-laugh/) social function. Speakers laugh more than listeners. 30x more likely to laugh in a group. They say it may be a replacement for [the act of grooming](https://www.scientificamerican.com/article/with-a-little-help-from-my-friends/) each other. 
+
+[Mayo Clinic - Health Benefits of Laughter](https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress-relief/art-20044456) 

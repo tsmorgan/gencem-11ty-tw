@@ -2,7 +2,11 @@ module.exports = {
   mode: "jit",
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+          prose: "74ch",
+      }
+    },
   },
   variants: {},
   plugins: [],

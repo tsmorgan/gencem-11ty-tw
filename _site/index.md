@@ -1,23 +1,20 @@
 ---
 title: Home
 layout: home
-tags: page
-modified: 2022-01-09 00:00:00
-order: 1
 ---
 
-<h1 class="pt-24 pb-6 text-center">
-	<span class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-		Hello world!
-	</span>
-</h1>
-<h2 class="pb-12 text-4xl font-bold text-center text-gray-500">
-	{{ config.siteTitle }}
-</h2>
+Hello.
 
-<div class="container max-w-lg mx-auto text-xl text-center">
-	<p>Starter template for building <a href="https://www.11ty.dev/" target="_blank">Eleventy</a> static sites with <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> automatically generating the corresponding styles and writing them to a static CSS file.</p>
-	<p class="pt-3"><a href="https://github.com/jeremydaly/eleventy-tailwind-template#readme" class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">View the README</a></p>
-</div>
+This is a collection of my writings about comedy.
 
-{% include "navigation.njk" %}
+<p class="mb-0">You can</p>
+
+* Read more [about](/x/about/) this site and why I created it
+* Dive into my ideas about [what makes things funny](/x/what-makes-things-funny/)
+* Take a look at some of the [bits of comedy](/bits/) written about
+
+Really, it's just a bunch of my thoughts and opinions. It's not in any order, it's perpetually unfinished, and unpolished, and it's quite possibly wildly inaccurate.
+
+Despite that, if you're interested in comedy, you may find something interesting.
+
+{# If you'd like to comment, correct or query anything you can find [me on twitter](http://twitter.com/tsmz/). #}

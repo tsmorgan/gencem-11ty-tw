@@ -1,0 +1,12 @@
+---
+title: Home
+layout: page
+---
+
+<p>A list of all the people who get a mention somewhere.</p>
+
+<ul>
+{% for page in collections.people | sort(false,true,"fileSlug") %}
+<li class="mb-1"><a href="{{ page.url }}" data-date="{{ page.date }}">{{ page.fileSlug }}</a> </li>
+{% endfor %}
+</ul>

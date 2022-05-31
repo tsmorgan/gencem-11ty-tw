@@ -1,10 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  letter-spacing:-0.062em;
+  word-spacing:-0.062em;
+}
 a {
-  @apply text-purple-500 font-medium;
+  @apply text-sky-600;
+  @apply font-medium;
+  @apply underline;
 }
 a:hover {
-    @apply underline;
+  @apply underline;
+  @apply text-red-500;
+  @apply decoration-amber-400;
+}
+h1,h2,h3,h4,h5,p,ol,ul,blockquote,article,aside {
+  @apply mb-6;
+  line-height:1.3em;
+}
+
+article h1, article h2 {
+    @apply mb-2;
+    @apply pt-3;
+}
+article h1 { @apply text-4xl; }
+article h2 { @apply text-3xl; }
+article ul { @apply list-inside; }
+
+p:last-child {
+  @apply mb-0;
+}
+blockquote {
+  @apply p-6;
+  @apply bg-stone-100;
+  @apply border-l-4;
+  @apply border-stone-200;
+}
+body {
+  font-family: 'Courier Prime', monospace;
+}
+ol,ul {
+  @apply list-inside;
+  @apply mt-0;
+}
+ol { @apply list-decimal; }
+ul { @apply list-disc; @apply list-outside; }
+.special {
+  font-family: 'Special Elite', cursive;
+}
+.nojs .js {
+  display:none;
 }

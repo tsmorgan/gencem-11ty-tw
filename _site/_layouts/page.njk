@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<header class="pt-12 mb-12">
+  <a href="/" class="special">The Gentle Cemetery</a>
+</header>
+
+<h1 class="text-5xl special font-black mb-3">
+  {{ page.fileSlug | titleCase }}
+  <img class="inline h-16 ml-3" src="/images/promoimage.png" alt="the tattood arm of Lenny Bruce" />
+</h1>
+
+<p class="text-base mt-0 mb-6"><span class="text-stone-400">Updated:</span> {{ page.date | datawoohoo }}</p>
+
+<article class="bg-white p-3 sm:py-5 sm:px-6 md:py-10 md:px-12">
+
+{{ content | safe }}
+
+<p class="text-sky-600 js"><- <a href="javascript:window.history.back();">Back</a></p>
+
+</article>
