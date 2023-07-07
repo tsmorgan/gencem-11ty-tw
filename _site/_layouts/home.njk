@@ -21,7 +21,7 @@ layout: base
 
   <ul>
   {% for page in collections.pages | sort(true,true,"date") | limit(20) %}
-  <li class="mb-1"><a href="{{ page.url }}" data-date="{{ page.date }}">{{ page.fileSlug }} &mdash; <span class="date">{{ page.date | datawoohoo }}</span></a></li>
+  <li class="mb-1"><a href="{{ page.url }}" title="{{ page.date }}" data-date="{{ page.date }}">{{ page.fileSlug }} &mdash; <span class="date">{{ page.date | datawoohoo }}</span></a></li>
   {% endfor %}
   </ul>
 

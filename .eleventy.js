@@ -9,6 +9,11 @@ dayjs.extend(relativeTime)
 console.log(tc.titleCase("pio"));
 
 module.exports = function (config) {
+
+  // commented out because it's set in /x/x.json
+  //
+  // config.addGlobalData("date", "git Last Modified");
+
   // Pass-through images
   config.addPassthroughCopy("./_site/images");
 
@@ -34,6 +39,8 @@ module.exports = function (config) {
     return arr.slice(0, limit);
   });
 
+  // commented out because a tag is set in /x/x.json
+  //
   // Add pages collection
   // config.addCollection("pages", function (collections) {
   //   return collections.getFilteredByTag("page").sort(function (a, b) {

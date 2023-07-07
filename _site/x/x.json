@@ -1,6 +1,6 @@
 {
   "layout": "page",
   "permalink": "/x/{{ page.filePathStem | slugify }}/",
-  "date": "Last Modified",
+  "date": "git Last Modified",
   "tags": ["pages"]
 }
