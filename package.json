@@ -4,9 +4,9 @@
   "description": "Template for using Eleventy and Tailwind CSS",
   "scripts": {
     "start": "npm-run-all -p dev:*",
-    "build": "npx @11ty/eleventy && tailwindcss -i _site/css/styles.sass -o gentlecemetery/css/styles.css --minify",
+    "build": "npx @11ty/eleventy && tailwindcss -i _site/css/styles.sass -o _output/css/styles.css --minify",
     "dev:11ty": "eleventy --serve --quiet",
-    "dev:css": "tailwindcss -i _site/css/styles.sass -o gentlecemetery/css/styles.css --watch --postcss --minify"
+    "dev:css": "tailwindcss -i _site/css/styles.sass -o _output/css/styles.css --watch --postcss --minify"
   },
   "repository": {
     "type": "git",

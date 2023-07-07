@@ -83,7 +83,7 @@ module.exports = function (config) {
       data: "_data",
       includes: "_includes",
       layouts: "_layouts",
-      output: "gentlecemetery",
+      output: "_output",
     },
   };
 };
