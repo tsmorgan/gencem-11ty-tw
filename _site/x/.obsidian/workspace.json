@@ -93,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Moose Joke.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Moose Joke.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "The Moose Joke.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -153,6 +149,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21e29edda00a531a",
-  "lastOpenFiles": []
+  "active": "ba814ea2b5fa171f",
+  "lastOpenFiles": [
+    "Frantacle.md",
+    "Fishing.md",
+    "The Moose Joke.md"
+  ]
 }

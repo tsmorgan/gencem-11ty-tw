@@ -1,0 +1,10 @@
+.nav-folder-title {
+}
+.nav-folder.mod-root > .nav-folder-title {
+    color:#eee;
+}
+.nav-folder-title::before {
+    content: "Gentle Cemetery";
+    font-size:1.4rem;
+    color:rgb(0, 184, 61);
+}
