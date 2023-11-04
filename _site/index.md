@@ -17,4 +17,4 @@ Really, it's just a bunch of my thoughts and opinions. It's not in any order, it
 
 Despite that, if you're interested in comedy, you may find something interesting.
 
-{# If you'd like to comment, correct or query anything you can find [me on twitter](http://twitter.com/tsmz/). #}
+<!-- If you'd like to comment, correct or query anything you can find [me on twitter](http://twitter.com/tsmz/). -->
